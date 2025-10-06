@@ -74,6 +74,79 @@ source install/setup.bash
 
 ---
 
+## 🕹️ AutoDrive Simulator Setup
+
+The **AutoDrive Simulator** is a Unity-based engine that runs independently and communicates with the AutoDrive DevKit.
+
+### Download the Simulator
+
+Download the simulator from this Google Drive link:
+
+[AutoDrive Simulator Download](https://drive.google.com/drive/folders/1WjjEglKLUTzKzqdSDZjVLWvkoVvwC3hb?usp=sharing)
+
+After downloading, extract the folder.
+
+---
+
+### Folder Structure
+
+After extraction, the simulator folder should look like this:
+
+```
+autodrive_simulator/
+├── AutoDRIVE Simulator.x86_64        # Main executable to start the simulator
+├── Data/                             # Contains all game assets and configurations
+│   ├── app.info
+│   ├── boot.config
+│   ├── globalgamemanagers
+│   ├── il2cpp_data/
+│   ├── Plugins/
+│   ├── Resources/
+│   └── UnitySubsystems/
+├── GameAssembly.so
+└── UnityPlayer.so
+
+```
+
+> Note: Do not move or rename the files inside the Data folder. They are required for the simulator engine to function correctly.
+
+---
+
+### Running the Simulator
+
+1. Open a terminal and navigate to the simulator folder:
+
+```bash
+cd path/to/autodrive_simulator
+
+```
+
+1. Start the simulator engine:
+
+```bash
+./AutoDRIVE\ Simulator.x86_64
+
+```
+
+1. The simulator will launch using Unity, ready to connect with the AutoDrive DevKit.
+
+---
+
+### Folder Placement Recommendation
+
+To ensure smooth integration with the DevKit:
+
+```
+root_folder/
+├── autodrive_simulator/       # Simulator folder
+└── autodrive_devkit/          # DevKit folder
+
+```
+
+- Both folders must reside in the **same root directory**.
+- After placement, you can start the simulator and run the ROS 2 / Python DevKit scripts as described in previous sections.
+
+---
 ## Usage
 
 - **Starting the Simulator**
