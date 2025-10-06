@@ -1,7 +1,9 @@
 # AutoDrive DevKit Documentation
 
 **AutoDrive DevKit** is a project for autonomous racing simulation that combines **2D SLAM**, **occupancy grid mapping**, and **optimal path planning** for race tracks in the AutoDrive Simulator environment. It allows building static maps of tracks, computing optimal racing lines for speed laps, and integrating directly with simulator-based agent control.
-
+<p align="center">
+  <img src="2D SLAM+Nav.gif" width="600">
+</p>
 ---
 
 ## Features
