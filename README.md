@@ -121,14 +121,18 @@ cd path/to/autodrive_simulator
 
 ```
 
-1. Start the simulator engine:
+2. Start the simulator engine:
 
 ```bash
 ./AutoDRIVE\ Simulator.x86_64
 
 ```
 
-1. The simulator will launch using Unity, ready to connect with the AutoDrive DevKit.
+3. The simulator will launch using Unity, ready to connect with the AutoDrive DevKit.
+   
+<p align="center">
+  <img src="Simulator window.png" width="600">
+</p>
 
 ---
 
